@@ -11,19 +11,19 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://github.com/geasscode/nextxtest/blob/master/app_download_web/nextxtest.ipa</string>
+					<string>https://raw.githubusercontent.com/geasscode/nextxtest/master/app_download_web/nextxtest.ipa</string>
 				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.by-health.memberapp</string>
+				<string>com.technologystudios.nextxtest</string>
 				<key>bundle-version</key>
 				<string>0.1</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>营养家会员店</string>
+				<string>nextxtest</string>
 			</dict>
 		</dict>
 	</array>
