@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="gbk">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>营养家会员店客户端</title>
+	<link rel="stylesheet" href="jquery.mobile-1.4.2.min.css">
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.2.min.js"></script>
+	<style>
+		.byhealth-page{
+			background-color:#C9DAAF;
+		}
+	</style>
+</head>
+<body>
+<div data-role="page" class="byhealth-pagex">
+
+
+	<div role="main" style="margin-left:40px;margin-right:40px;">
+		<h2><center>营养家会员店客户端</center></h2>
+        <div>
+            <div class="ui-grid-a ui-responsive">
+                <div class="ui-block-a"><a href="itms-services://?action=download-manifest&url=https://dl.dropboxusercontent.com/s/s4ehjg6fopkd9s7/memberapp.plist" target="_blank" class="ui-shadow ui-btn ui-corner-all ui-btn-hover-b ui-btn-up-b"><img src="mac_logo.png"/></a></div>
+                <div class="ui-block-b"><a href="https://dl.dropboxusercontent.com/s/z79g1w0nqahlvh4/MemberApp_latest.apk" target="_blank" class="ui-shadow ui-btn ui-corner-all"><img src="android_logo.png"/></a></div>
+            </div>
+        </div><!--/demo-html -->
+	</div><!-- /panel -->
+
+
+</div><!-- /page -->
+
+</body>
+  <script type="text/javascript">
+        var isAndroid=navigator.userAgent.match(/android/ig),
+                isIos=navigator.userAgent.match(/iphone|ipod/ig),
+                isIpad=navigator.userAgent.match(/ipad/ig);
+        window.onload=function() {
+            if(isIos||isIpad){
+                window.location = "itms-services://?action=download-manifest&url=https://dl.dropboxusercontent.com/s/s4ehjg6fopkd9s7/memberapp.plist";
+            }
+            else if(isAndroid){
+                setTimeout(function(){window.location = "https://dl.dropboxusercontent.com/s/z79g1w0nqahlvh4/MemberApp_latest.apk";},300);
+            }
+        }
+    </script>
+</html>
